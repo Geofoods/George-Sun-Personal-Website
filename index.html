@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>George Sun | Game Developer & Programmer Portfolio</title>
+  <meta name="description" content="Personal portfolio website of George Sun (Geofoods / GeorgeCodes), an award-winning gameplay programmer and game developer based in Ottawa, Ontario. Specializing in Python, Godot, and interactive media.">
+  <meta name="keywords" content="George Sun, Geofoods, GeorgeCodes, Game Developer, Programmer, Ottawa, Godot, Python, Pygame, Portfolio, Holy Moly, System Breach, Depth Delvers, Pycraft">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient BG grid and glowing backdrop blobs -->
+  <div class="ambient-bg"></div>
+  <div class="blob-1"></div>
+  <div class="blob-2"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo" id="nav-logo">George Sun</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" id="lnk-about">About</a></li>
+          <li><a href="#skills" id="lnk-skills">Skills</a></li>
+          <li><a href="#projects" id="lnk-projects">Projects</a></li>
+          <li><a href="#arcade" id="lnk-arcade">Retro Arcade</a></li>
+          <li><a href="#contact" id="lnk-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h3>Gameplay Programmer & Developer</h3>
+          <h1>Hi, I'm George Sun.<br>I build <span class="typewriter" id="typewriter"></span></h1>
+          <p>Ottawa-based coder crafting immersive experiences, interactive simulations, and gaming tools. Award-winning game jam programmer turning creative ideas into scalable, polished mechanics.</p>
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-projects">Explore Projects</a>
+            <a href="#arcade" class="btn btn-secondary" id="hero-btn-arcade">Play Retro Arcade</a>
+          </div>
+          
+          <!-- Social Profiles -->
+          <div class="social-links">
+            <a href="https://github.com/Geofoods" target="_blank" rel="noopener" class="social-icon" id="link-github" title="GitHub Profile">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://georgecodes.itch.io" target="_blank" rel="noopener" class="social-icon" id="link-itchio" title="Itch.io Portfolio">
+              <svg viewBox="0 0 24 24"><path d="M19.18 3L4.82 3C3.52 3 2.45 4.07 2.45 5.37v2.33c0 .17.06.33.17.46l4.23 5.09c.27.32.7.51 1.15.51h8c.45 0 .88-.19 1.15-.51l4.23-5.09c.11-.13.17-.29.17-.46V5.37C21.55 4.07 20.48 3 19.18 3zm.82 5.06l-3.3 3.96c-.14.17-.35.26-.57.26-.22 0-.43-.09-.57-.26L13 9.06 10.44 12.08c-.14.17-.35.26-.57.26s-.43-.09-.57-.26l-3.3-3.96c-.23-.27-.23-.67 0-.94L8.14 4.88c.14-.17.35-.26.57-.26.22 0 .43.09.57.26L12 7.94l2.72-3.06c.14-.17.35-.26.57-.26.22 0 .43.09.57.26l2.14 2.28c.23.27.23.67 0 .94zM12 14.5c-4.14 0-7.5 3.13-7.5 7v.5h15v-.5c0-3.87-3.36-7-7.5-7zm-3.5 4c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm7 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Code Visual Editor -->
+        <div class="hero-visual">
+          <div class="g-card hero-code-editor">
+            <div class="editor-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="editor-body">
+              <p><span class="comment"># Game loop instantiation</span></p>
+              <p><span class="keyword">def</span> <span class="function">update_physics</span>(delta):</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;player.position += input * speed</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> player.collides_with(enemies):</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player.health -= <span class="string">10</span></p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;play_sound(<span class="string">"zombie_hit"</span>)</p>
+              <br>
+              <p><span class="comment"># Render frame graphics</span></p>
+              <p><span class="keyword">def</span> <span class="function">draw_screen</span>():</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;draw_background()</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;draw_active_entities()</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;draw_hotbar(inventory)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Achievements Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me & Timeline</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I am a passionate <span class="highlight">Gameplay Programmer</span> and software enthusiast based in Ottawa. My focus is on writing clean, efficient code that powers fun player mechanics and responsive game feel. Whether it's procedural world generation in 2D grids, real-time AI state machines, or custom UI systems, I love solving the technical puzzles that make games tick.</p>
+            <p>I actively participate in hackathons and game jams, collaborating with developers and artists to build complete game releases under tight constraints. I specialize in <span class="highlight">Godot Engine (GDScript)</span> and <span class="highlight">Pygame (Python)</span>, alongside core web technologies.</p>
+          </div>
+          
+          <!-- Timeline -->
+          <div class="timeline">
+            <div class="timeline-item accent">
+              <div class="timeline-date">June 2026</div>
+              <h3 class="timeline-title">2nd Place Award - Hack Club Campfire Jam</h3>
+              <p class="timeline-desc">Programmed physics and complex VFX/SFX systems for <strong>Depth Delvers</strong>, an underwater dungeon crawler about descending deep into the ocean. Collaborated with a team of developers in Ottawa.</p>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-date">2026</div>
+              <h3 class="timeline-title">2nd Place Award - Pixel Forge Game Jam</h3>
+              <p class="timeline-desc">Engineered codebase and client-hacked mechanics for <strong>System // Breach</strong>, a shooter inspired by <i>The Matrix</i> themed around breaking rules using a customized built-in hacked interface.</p>
+            </div>
+            
+            <div class="timeline-item accent">
+              <div class="timeline-date">June 2026</div>
+              <h3 class="timeline-title">Pycraft Sandbox Release</h3>
+              <p class="timeline-desc">Designed and deployed a solo project, <strong>Pycraft</strong>, a 2D Minecraft-inspired sandbox survival game in Pygame featuring procedurally generated worlds, day/night cycles, crafting recipes, and combat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container skills-container">
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="skills-intro">Languages, engines, and workflows I use to build robust codebases and game loops.</p>
+        <div class="skills-wrapper">
+          <div class="skill-tag" id="skill-python">Python</div>
+          <div class="skill-tag" id="skill-gdscript">GDScript</div>
+          <div class="skill-tag" id="skill-godot">Godot Engine</div>
+          <div class="skill-tag" id="skill-pygame">Pygame Framework</div>
+          <div class="skill-tag" id="skill-js">JavaScript</div>
+          <div class="skill-tag" id="skill-git">Git & GitHub</div>
+          <div class="skill-tag" id="skill-gamedesign">Gameplay Programming</div>
+          <div class="skill-tag" id="skill-vfx">VFX & SFX Integration</div>
+          <div class="skill-tag" id="skill-sql">SQL & Databases</div>
+          <div class="skill-tag" id="skill-html">HTML5 / CSS3</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          
+          <!-- System // Breach -->
+          <div class="g-card project-card" id="card-system-breach">
+            <div class="project-header">
+              <span class="project-badge silver">2nd Place Jam Winner</span>
+              <div class="project-links">
+                <a href="https://georgecodes.itch.io/system-breach" target="_blank" rel="noopener" class="proj-link" title="Play on Itch.io">Itch.io</a>
+              </div>
+            </div>
+            <h3>System // Breach</h3>
+            <p>A Matrix-inspired top-down action shooter created for the Pixel Forge Game Jam. Includes a unique built-in "hacked client" that allows players to toggle game values and break rules to defeat security bots.</p>
+            <div class="project-tech">
+              <span class="tech-pill">Godot</span>
+              <span class="tech-pill">GDScript</span>
+              <span class="tech-pill">Game Jam</span>
+              <span class="tech-pill">Action</span>
+            </div>
+          </div>
+          
+          <!-- Depth Delvers -->
+          <div class="g-card project-card" id="card-depth-delvers">
+            <div class="project-header">
+              <span class="project-badge silver">2nd Place Ottawa Jam</span>
+              <div class="project-links">
+                <a href="https://georgecodes.itch.io/depth-delvers" target="_blank" rel="noopener" class="proj-link" title="Play on Itch.io">Itch.io</a>
+              </div>
+            </div>
+            <h3>Depth Delvers</h3>
+            <p>An atmosphere-driven underwater dungeon-crawler built during the Hack Club Campfire Game Jam in Ottawa. Features immersive physics, visual shaders, deep ocean exploration, and custom audio scripting.</p>
+            <div class="project-tech">
+              <span class="tech-pill">Godot</span>
+              <span class="tech-pill">GDScript</span>
+              <span class="tech-pill">VFX/SFX</span>
+              <span class="tech-pill">Dungeon Crawler</span>
+            </div>
+          </div>
+
+          <!-- Holy Moly -->
+          <div class="g-card project-card" id="card-holy-moly">
+            <div class="project-header">
+              <span class="project-badge">Featured Game</span>
+              <div class="project-links">
+                <a href="https://georgecodes.itch.io/holy-moly" target="_blank" rel="noopener" class="proj-link" title="Play on Itch.io">Itch.io</a>
+              </div>
+            </div>
+            <h3>Holy Moly</h3>
+            <p>A fast-paced 2D action game centered on a mole traveling through the 9 levels of hell to escape. Responsible for core platforming controllers, gameplay mechanics, visual effects, and ability updates.</p>
+            <div class="project-tech">
+              <span class="tech-pill">Godot Engine</span>
+              <span class="tech-pill">VFX / Sound</span>
+              <span class="tech-pill">Level Design</span>
+              <span class="tech-pill">Android Port</span>
+            </div>
+          </div>
+
+          <!-- Pycraft -->
+          <div class="g-card project-card" id="card-pycraft">
+            <div class="project-header">
+              <span class="project-badge orange">Solo Project</span>
+              <div class="project-links">
+                <a href="https://github.com/Geofoods/Python-Minecraft-Pygame" target="_blank" rel="noopener" class="proj-link" title="View Source on GitHub">GitHub</a>
+              </div>
+            </div>
+            <h3>Pycraft</h3>
+            <p>A Minecraft-inspired 2D survival crafting game written in Pygame. Implements procedural noise world generation, iron and diamond cave levels, day/night vignette rendering, hotbar inventory, crafting matrices, and zombie AI.</p>
+            <div class="project-tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Pygame</span>
+              <span class="tech-pill">Algorithms</span>
+              <span class="tech-pill">Sandbox</span>
+            </div>
+          </div>
+
+          <!-- WarioWare Godot -->
+          <div class="g-card project-card" id="card-warioware">
+            <div class="project-header">
+              <span class="project-badge">Fan Recreation</span>
+              <div class="project-links">
+                <a href="https://georgecodes.itch.io" target="_blank" rel="noopener" class="proj-link" title="View Itch.io Games">Itch.io</a>
+              </div>
+            </div>
+            <h3>WarioWare Godot</h3>
+            <p>A micro-game compilation inspired by Nintendo's WarioWare series. Contains 6 fast-paced mini-games requiring quick reflexes and simple controls, cycling rapidly with increasing difficulty speed modifiers.</p>
+            <div class="project-tech">
+              <span class="tech-pill">Godot</span>
+              <span class="tech-pill">GDScript</span>
+              <span class="tech-pill">Micro-games</span>
+            </div>
+          </div>
+
+          <!-- Sundeck Hackpad -->
+          <div class="g-card project-card" id="card-hackpad">
+            <div class="project-header">
+              <span class="project-badge orange">Hardware Integration</span>
+              <div class="project-links">
+                <a href="https://github.com/Geofoods/Sundeck-Hackpad" target="_blank" rel="noopener" class="proj-link" title="View Source on GitHub">GitHub</a>
+              </div>
+            </div>
+            <h3>Sundeck Hackpad</h3>
+            <p>A physical macropad interface utilizing a micro-controller mapped to Python software. Programmed hotkeys, system shortcuts, and real-time interface integrations for game testing and development macros.</p>
+            <div class="project-tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">MicroPython</span>
+              <span class="tech-pill">Hardware API</span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Retro Arcade Section -->
+    <section class="arcade" id="arcade">
+      <div class="container">
+        <h2 class="section-title">Play "Bug Squasher" Arcade</h2>
+        <div class="arcade-container">
+          <!-- Canvas Cabinet Display -->
+          <div class="arcade-screen-wrapper">
+            <canvas id="arcade-canvas" width="640" height="360"></canvas>
+            <!-- Overlay Screen -->
+            <div class="arcade-overlay" id="arcade-overlay">
+              <h3 id="arcade-overlay-title">SYSTEM INTRUSION</h3>
+              <p id="arcade-overlay-text">Security bugs are corrupting the database. Help the compiler collect backup floppy disks and vaporize the errors!</p>
+              <button class="btn btn-primary" id="arcade-btn-start">Boot Game</button>
+            </div>
+          </div>
+          
+          <!-- Instructions -->
+          <div class="arcade-instructions">
+            <h3>Retro Canvas Arcade</h3>
+            <p>I built this retro micro-game using <strong>HTML5 Canvas and Vanilla JavaScript</strong> to showcase real-time web gameplay loops (refresh rates, rendering states, and vector physics) directly inside the browser.</p>
+            <p>Collect glowing <strong>Floppy Disks</strong> to score points. Defeat <strong>Bug Nodes</strong> by running over them while powered up, or avoid them when your laser shield is down!</p>
+            
+            <ul class="controls-list">
+              <li><span class="key-cap">Arrow Keys</span> or <span class="key-cap">WASD</span> to steer player</li>
+              <li><span class="key-cap">Space</span> to fire laser shields (uses charge)</li>
+              <li>Collect <span class="highlight" style="color: var(--accent-cyan)">Cyan Disks</span> for score + shields</li>
+            </ul>
+            
+            <div style="margin-top: 25px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--card-border); padding-top: 15px;">
+              <span>High Score: <strong id="arcade-highscore" style="color: var(--accent-mint)">0</strong></span>
+              <span>Score: <strong id="arcade-current-score" style="color: var(--accent-cyan)">0</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-grid">
+          <!-- Info Column -->
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>I am always open to discussing gameplay roles, contract development, tool designs, or game jam collaborations. Drop me a line!</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">📍</div>
+                <div class="method-details">
+                  <h4>Location</h4>
+                  <p>Ottawa, Ontario, Canada</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="method-icon">👾</div>
+                <div class="method-details">
+                  <h4>Itch.io Indie Games</h4>
+                  <p><a href="https://georgecodes.itch.io" target="_blank" rel="noopener" style="color: var(--accent-mint)">georgecodes.itch.io</a></p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="method-icon">💻</div>
+                <div class="method-details">
+                  <h4>Github</h4>
+                  <p><a href="https://github.com/Geofoods" target="_blank" rel="noopener" style="color: var(--accent-cyan)">github.com/Geofoods</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Form Column -->
+          <div class="g-card contact-form-wrapper">
+            <form id="contact-form" action="#" method="POST">
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="name@domain.com" required>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-input" placeholder="Type your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;" id="btn-submit-form">Send Message</button>
+              
+              <!-- Form Status Banner -->
+              <div class="form-status" id="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">George Sun</div>
+      <p class="footer-text">&copy; 2026 George Sun. All rights reserved. Crafted with clean HTML, CSS, &amp; Javascript.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
